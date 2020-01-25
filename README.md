@@ -15,11 +15,7 @@
 
   <!-- Build Status -->
 
-<img alt="Travis (.com)" src="https://img.shields.io/travis/com/EvilSpark/HNClone?style=for-the-badge&logo=travis">
-  
-  <img alt="AppVeyor" src="https://img.shields.io/appveyor/ci/EvilSpark/HNClone?style=for-the-badge&logo=appveyor">
-
-  <!-- Gitmoji -->
+ <!-- Gitmoji -->
 
   <a href="https://github.com/frinyvonnick/gitmoji-changelog">
     <img src="https://img.shields.io/badge/Changelog-gitmoji-brightgreen.svg?style=for-the-badge&logo=github" alt="Changelog" />
@@ -27,16 +23,6 @@
   </a>
 
   <!-- Maintenance -->
-
-<img alt="Code Climate maintainability" src="https://img.shields.io/codeclimate/maintainability/EvilSpark/HNClone?style=for-the-badge&logo=code-climate">
-
-  <!-- Codacy -->
-
-<img alt="Codacy grade" src="https://img.shields.io/codacy/grade/f748eb00985e46e08bbc77fa92c50313?style=for-the-badge&logo=codacy">
-
-  <!-- Codefactor -->
-
-<img alt="CodeFactor Grade" src="https://img.shields.io/codefactor/grade/github/evilspark/HNClone?style=for-the-badge&logo=codefactor">
 
   <!-- Netlify -->
 
