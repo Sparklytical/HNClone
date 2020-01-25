@@ -25,7 +25,6 @@ import App from 'containers/App';
 import '!file-loader?name=[name].[ext]!./images/favicon.ico';
 import 'file-loader?name=.htaccess!./.htaccess';
 /* eslint-enable import/no-unresolved */
-
 import { HelmetProvider } from 'react-helmet-async';
 import configureStore from './configureStore';
 
@@ -53,6 +52,8 @@ const ConnectedApp = () => (
 );
 
 const render = () => {
+  console.info('Initial State->');
+  console.info(store.getState());
   ReactDOM.render(<ConnectedApp />, MOUNT_NODE);
 };
 

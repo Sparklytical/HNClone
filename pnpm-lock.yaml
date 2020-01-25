@@ -6,6 +6,8 @@ dependencies:
   compression: 1.7.4
   connected-react-router: 6.6.1_6dd9ad5147c8a13b5c36e522a68764a0
   cross-env: 6.0.3
+  dotenv: 8.2.0
+  eslint-import-resolver-node: 0.3.3
   express: 4.17.1
   fontfaceobserver: 2.1.0
   history: 4.10.1
@@ -4172,6 +4174,12 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
+  /dotenv/8.2.0:
+    dev: false
+    engines:
+      node: '>=8'
+    resolution:
+      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /download/6.2.5:
     dependencies:
       caw: 2.0.1
@@ -4525,8 +4533,7 @@ packages:
   /eslint-import-resolver-node/0.3.3:
     dependencies:
       debug: 2.6.9
-      resolve: 1.14.2
-    dev: true
+      resolve: 1.15.0
     resolution:
       integrity: sha512-b8crLDo0M5RSe5YG8Pu2DYBj71tSB6OvXkfzwbJU2w7y8P4/yo0MyF8jU26IEuEuHF2K5/gcAJE3LhQGqBBbVg==
   /eslint-import-resolver-webpack/0.12.1_1ca05585c12a40acaa031c75abf132cf:
@@ -9081,7 +9088,6 @@ packages:
     resolution:
       integrity: sha512-ojmeN0qd+y0jszEtoY48r0Peq5dwMEkIlCOu6Q5f41lfkswXuKtYrhgoTpLnyIcHm24Uhqx+5Tqm2InSwLhE6Q==
   /path-parse/1.0.6:
-    dev: true
     resolution:
       integrity: sha512-GSmOT2EbHrINBf9SR7CDELwlJ8AENk3Qn7OikK4nFYAu3Ote2+JYNVvkpAEQm3/TLNEJFD/xZJjzyxg3KBWOzw==
   /path-root-regex/0.1.2:
@@ -10401,6 +10407,11 @@ packages:
     dev: true
     resolution:
       integrity: sha512-EjlOBLBO1kxsUxsKjLt7TAECyKW6fOh1VRkykQkKGzcBbjjPIxBqGh0jf7GJ3k/f5mxMqW3htMD3WdTUVtW8HQ==
+  /resolve/1.15.0:
+    dependencies:
+      path-parse: 1.0.6
+    resolution:
+      integrity: sha512-+hTmAldEGE80U2wJJDC1lebb5jWqvTYAfm3YZ1ckk1gBr0MnCqUKlwK1e+anaFljIl+F5tR5IoZcm4ZDA1zMQw==
   /responselike/1.0.2:
     dependencies:
       lowercase-keys: 1.0.1
@@ -12849,11 +12860,13 @@ specifiers:
   connected-react-router: 6.6.1
   cross-env: 6.0.3
   css-loader: 3.4.2
+  dotenv: 8.2.0
   error-overlay-webpack-plugin: 0.4.1
   eslint: 6.8.0
   eslint-config-airbnb: 18.0.1
   eslint-config-airbnb-base: 14.0.0
   eslint-config-prettier: 6.9.0
+  eslint-import-resolver-node: 0.3.3
   eslint-import-resolver-webpack: 0.12.1
   eslint-plugin-import: 2.20.0
   eslint-plugin-jsx-a11y: 6.2.3

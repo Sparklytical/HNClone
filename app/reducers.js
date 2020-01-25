@@ -4,8 +4,8 @@
 
 import { combineReducers } from '@reduxjs/toolkit';
 import { connectRouter } from 'connected-react-router';
-
 import history from 'utils/history';
+import app from './store/app/reducer';
 
 /**
  * Merges the main reducer with the router state and dynamically injected reducers
@@ -13,6 +13,7 @@ import history from 'utils/history';
 export default function createReducer(injectedReducers = {}) {
   const rootReducer = combineReducers({
     router: connectRouter(history),
+    app,
     ...injectedReducers,
   });
 
