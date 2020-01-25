@@ -5,8 +5,7 @@ dependencies:
   chalk: 3.0.0
   compression: 1.7.4
   connected-react-router: 6.6.1_6dd9ad5147c8a13b5c36e522a68764a0
-  cross-env: 6.0.3
-  dotenv: 8.2.0
+  cross-env: 7.0.0
   eslint-import-resolver-node: 0.3.3
   express: 4.17.1
   fontfaceobserver: 2.1.0
@@ -3607,15 +3606,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==
-  /cross-env/6.0.3:
+  /cross-env/7.0.0:
     dependencies:
       cross-spawn: 7.0.1
     dev: false
     engines:
-      node: '>=8.0'
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
     hasBin: true
     resolution:
-      integrity: sha512-+KqxF6LCvfhWvADcDPqo64yVIB31gv/jQulX2NGzKS/g3GEVz6/pt4wjHFtFWsHMddebWD/sDthJemzM4MaAag==
+      integrity: sha512-rV6M9ldNgmwP7bx5u6rZsTbYidzwvrwIYZnT08hSGLcQCcggofgFW+sNe7IhA1SRauPS0QuLbbX+wdNtpqE5CQ==
   /cross-spawn/3.0.1:
     dependencies:
       lru-cache: 4.1.5
@@ -4174,12 +4175,6 @@ packages:
       node: '>=4'
     resolution:
       integrity: sha512-tUMXrxlExSW6U2EXiiKGSBVdYgtV8qlHL+C10TsW4PURY/ic+eaysnSkwB4kA/mBlCyy/IKDJ+Lc3wbWeaXtuQ==
-  /dotenv/8.2.0:
-    dev: false
-    engines:
-      node: '>=8'
-    resolution:
-      integrity: sha512-8sJ78ElpbDJBHNeBzUbUVLsqKdccaa/BXF1uPTw3GrvQTBgrQrtObr2mUrE38vzYd8cEv+m/JBfDLioYcfXoaw==
   /download/6.2.5:
     dependencies:
       caw: 2.0.1
@@ -12858,9 +12853,8 @@ specifiers:
   compression: 1.7.4
   compression-webpack-plugin: 3.1.0
   connected-react-router: 6.6.1
-  cross-env: 6.0.3
+  cross-env: 7.0.0
   css-loader: 3.4.2
-  dotenv: 8.2.0
   error-overlay-webpack-plugin: 0.4.1
   eslint: 6.8.0
   eslint-config-airbnb: 18.0.1
