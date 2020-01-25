@@ -5,7 +5,7 @@ dependencies:
   chalk: 3.0.0
   compression: 1.7.4
   connected-react-router: 6.6.1_6dd9ad5147c8a13b5c36e522a68764a0
-  cross-env: 6.0.3
+  cross-env: 7.0.0
   express: 4.17.1
   fontfaceobserver: 2.1.0
   history: 4.10.1
@@ -25,7 +25,7 @@ dependencies:
   react-helmet-async: 1.0.4_react-dom@16.12.0+react@16.12.0
   react-hot-loader: 4.12.19_react-dom@16.12.0+react@16.12.0
   react-is: 16.12.0
-  react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+  react-redux: 7.1.3_react@16.12.0+redux@4.0.5
   react-router-dom: 5.1.2_react@16.12.0
   redux: 4.0.5
   redux-injectors: 1.2.0_e5233c3f8d7ce8667da1daa3007bdff8
@@ -3441,7 +3441,7 @@ packages:
       immutable: 3.8.2
       prop-types: 15.7.2
       react: 16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.5
       seamless-immutable: 7.1.4
     dev: false
@@ -3605,15 +3605,17 @@ packages:
     dev: true
     resolution:
       integrity: sha512-MJG9liiZ+ogc4TzUwuvbER1JRdgvUFSB5+VR/g5h82fGaIRWMWddtKBHi7/sVhfjQZ6SehlyhvQYrcYkaUIpLg==
-  /cross-env/6.0.3:
+  /cross-env/7.0.0:
     dependencies:
       cross-spawn: 7.0.1
     dev: false
     engines:
-      node: '>=8.0'
+      node: '>=10.14'
+      npm: '>=6'
+      yarn: '>=1'
     hasBin: true
     resolution:
-      integrity: sha512-+KqxF6LCvfhWvADcDPqo64yVIB31gv/jQulX2NGzKS/g3GEVz6/pt4wjHFtFWsHMddebWD/sDthJemzM4MaAag==
+      integrity: sha512-rV6M9ldNgmwP7bx5u6rZsTbYidzwvrwIYZnT08hSGLcQCcggofgFW+sNe7IhA1SRauPS0QuLbbX+wdNtpqE5CQ==
   /cross-spawn/3.0.1:
     dependencies:
       lru-cache: 4.1.5
@@ -9824,7 +9826,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-redux/7.1.3_cbb074364ace735d13d38692c50e064b:
+  /react-redux/7.1.3_react@16.12.0+redux@4.0.5:
     dependencies:
       '@babel/runtime': 7.7.6
       hoist-non-react-statics: 3.3.1
@@ -9832,14 +9834,11 @@ packages:
       loose-envify: 1.4.0
       prop-types: 15.7.2
       react: 16.12.0
-      react-dom: 16.12.0_react@16.12.0
       react-is: 16.12.0
       redux: 4.0.5
     dev: false
     peerDependencies:
       react: ^16.8.3
-      react-dom: '*'
-      react-native: '*'
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
     peerDependenciesMeta:
       react-dom:
@@ -10080,7 +10079,7 @@ packages:
       lodash: 4.17.15
       react: 16.12.0
       react-dom: 16.12.0_react@16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.4
     dev: false
     peerDependencies:
@@ -12847,7 +12846,7 @@ specifiers:
   compression: 1.7.4
   compression-webpack-plugin: 3.1.0
   connected-react-router: 6.6.1
-  cross-env: 6.0.3
+  cross-env: 7.0.0
   css-loader: 3.4.2
   error-overlay-webpack-plugin: 0.4.1
   eslint: 6.8.0
