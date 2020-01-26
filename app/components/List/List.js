@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 import ListItem from 'components/ListItem';
 import { ListWrapper } from './styles';
 // import PropTypes from 'prop-types';
@@ -12,14 +13,19 @@ import { ListWrapper } from './styles';
 
 class List extends Component {
   render() {
+    const { stories } = this.props;
     return (
       <ListWrapper>
-        <ListItem />
+        {stories.map(story => (
+          <ListItem key={story.id} {...story} />
+        ))}
       </ListWrapper>
     );
   }
 }
 
-List.propTypes = {};
+List.propTypes = {
+  stories: PropTypes.array.isRequired,
+};
 
 export default List;
