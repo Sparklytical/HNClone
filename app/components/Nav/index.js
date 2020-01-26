@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import actions from 'store/app/actions';
+import actions from 'store/app/action';
 import Nav from './Nav';
 
 const mapStateToProps = state => ({

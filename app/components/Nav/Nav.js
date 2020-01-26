@@ -17,9 +17,12 @@ const Nav = ({ layout, theme, setLayout, setTheme }) => (
     <Header>
       <Content>
         <NavSection>
-          <ExternalLink href="https://gitconnected.com" target="_blank">
-            <Logo src="https://gitconnected.com/public/meta/favicon/gc-fav.png" />{' '}
-            gitconnected
+          <ExternalLink
+            href="https://github.com/EvilSpark/HNClone"
+            target="_blank"
+          >
+            <Logo src="https://avatars2.githubusercontent.com/u/30311089?s=460&v=4" />{' '}
+            EvilSpark
           </ExternalLink>
         </NavSection>
         <NavSection>

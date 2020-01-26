@@ -15,7 +15,7 @@ const action = (type, payload) => ({ type, payload });
 
 const actions = {
   fetchStoryIds: (payload = {}) => dispatch => {
-    dispatch(action(actionTypes.FETCH_STORY_IDS_FAILURE, payload));
+    dispatch(action(actionTypes.FETCH_STORY_IDS_REQUEST, payload));
 
     return hackerNewsApi
       .getTopStoryIds()
@@ -28,7 +28,6 @@ const actions = {
   },
   fetchStories: (payload = {}) => dispatch => {
     const { storyIds, page } = payload;
-
     dispatch(action(actionTypes.FETCH_STORIES_REQUEST, payload));
 
     return hackerNewsApi

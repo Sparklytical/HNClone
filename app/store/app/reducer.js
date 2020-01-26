@@ -1,12 +1,20 @@
 import { actionTypes } from './action';
+import { layouts, themes } from './utils';
 
 const getInitialState = () => ({
-  theme: 'dark',
+  theme: themes.dark,
+  layout: layouts.list,
 });
 
 const app = (state = getInitialState(), { type, payload }) => {
+  console.info('payload: ', payload);
   switch (type) {
     case actionTypes.SET_THEME:
+      return {
+        ...state,
+        ...payload,
+      };
+    case actionTypes.SET_LAYOUT:
       return {
         ...state,
         ...payload,

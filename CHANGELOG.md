@@ -11,7 +11,7 @@
 
 ### Fixed
 
-- 🐛 Changed from travis to nodeCi [[fa98779](https://github.com/EvilSpark/HNClone/commit/fa98779ec5d68ee87a1980e3ae3e642164720d1f)]
+- 🐛 Changed from travis to nodeCi [[7a46dbf](https://github.com/EvilSpark/HNClone/commit/7a46dbf4fcd4086fdfc45176523e1ca3a76e6464)]
 - 🏁 In the middle of fixing states [[0b6749b](https://github.com/EvilSpark/HNClone/commit/0b6749b26b33ae78a4af4fdc2bf271deaecf3695)]
 
 ### Miscellaneous
