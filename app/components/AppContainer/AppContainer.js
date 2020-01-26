@@ -46,10 +46,10 @@ class AppContainer extends Component {
               <Title>
                 <div> Hacker News Reader</div>
                 <GithubLink
-                  href="https://github.com/gitconnected/hacker-news-reader"
+                  href="https://github.com/EvilSpark/HNClone"
                   target="_blank"
                 >
-                  (build your own)
+                  Github Repo
                 </GithubLink>
               </Title>
             </TitleWrapper>
