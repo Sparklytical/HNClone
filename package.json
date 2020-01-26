@@ -1,10 +1,10 @@
 {
-  "name": "react-redux-boilerplate",
+  "name": "HackerNewsClone",
   "version": "1.0.0",
-  "description": "A minimal stripped down offline-first react-redux-boilerplate with best performance and pratices.",
+  "description": "A react redux based app",
   "repository": {
     "type": "git",
-    "url": "git://github.com/EvilSpark/react-redux-boilerplate.git"
+    "url": "git://github.com/EvilSpark/HNClone.git"
   },
   "engines": {
     "npm": ">=5",
