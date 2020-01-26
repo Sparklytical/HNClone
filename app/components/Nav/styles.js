@@ -50,7 +50,7 @@ export const Spacer = styled.div`
 
 export const ExternalLink = styled.a`
   display: flex;
-  color: #fff;
+  color: ${({ theme }) => theme.text};
   font-weight: bold;
   letter-spacing: 2px;
 `;

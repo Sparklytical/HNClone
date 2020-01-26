@@ -26,6 +26,9 @@ const Nav = ({ layout, theme, setLayout, setTheme }) => (
           </ExternalLink>
         </NavSection>
         <NavSection>
+          <p>
+            Toggles <i className="fas fa-angle-right"></i>
+          </p>
           {layout === layouts.list ? (
             <Icon onClick={() => setLayout(layouts.grid)}>
               <i className="fas fa-th-large" />

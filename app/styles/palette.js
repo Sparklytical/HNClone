@@ -9,7 +9,7 @@ export const colorsDark = {
 export const colorsLight = {
   background: '#EAEAEA',
   backgroundSecondary: '#F8F8F8',
-  text: '#848886',
-  textSecondary: '#aaaaaa',
+  text: '#848885',
+  textSecondary: '#848885',
   border: '#EAEAEA',
 };
