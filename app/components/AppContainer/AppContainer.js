@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from 'styled-components';
+import InfiniteScroll from 'react-infinite-scroll-component';
 import Nav from 'components/Nav';
 import List from 'components/List';
+import Loader from 'components/Loader';
 import { themes } from 'store/app/utils';
 import { colorsDark, colorsLight } from 'styles/palette';
 
@@ -36,7 +38,7 @@ class AppContainer extends Component {
   };
 
   render() {
-    const { stories, theme } = this.props;
+    const { stories, theme, hasMoreStores } = this.props;
     return (
       <ThemeProvider theme={theme === themes.light ? colorsLight : colorsDark}>
         <div>
@@ -53,8 +55,18 @@ class AppContainer extends Component {
                 </GithubLink>
               </Title>
             </TitleWrapper>
-
-            <List stories={stories} />
+            <InfiniteScroll
+              dataLength={stories.length}
+              next={this.fetchStories}
+              hasMore={hasMoreStores}
+              loader={<Loader />}
+              style={{
+                height: '100%',
+                overflow: 'visible',
+              }}
+            >
+              <List stories={stories} />
+            </InfiniteScroll>
           </Wrapper>
         </div>
       </ThemeProvider>
@@ -75,5 +87,6 @@ AppContainer.propTypes = {
   isFetching: PropTypes.bool.isRequired,
   fetchStories: PropTypes.func,
   fetchStoriesFirstPage: PropTypes.func.isRequired,
+  hasMoreStores: PropTypes.bool.isRequired,
 };
 export default AppContainer;
