@@ -38,7 +38,8 @@ class AppContainer extends Component {
   };
 
   render() {
-    const { stories, theme, hasMoreStores } = this.props;
+    const { stories, theme, hasMoreStories } = this.props;
+    console.info(this.fetchStories);
     return (
       <ThemeProvider theme={theme === themes.light ? colorsLight : colorsDark}>
         <div>
@@ -58,12 +59,30 @@ class AppContainer extends Component {
             <InfiniteScroll
               dataLength={stories.length}
               next={this.fetchStories}
-              hasMore={hasMoreStores}
+              hasMore={hasMoreStories}
               loader={<Loader />}
               style={{
                 height: '100%',
                 overflow: 'visible',
               }}
+              endMessage={
+                <p style={{ textAlign: 'center', color: '#346600' }}>
+                  <b>Yay! You have seen it all</b>
+                </p>
+              }
+              // below props only if you need pull down functionality
+              refreshFunction={this.fetchStories}
+              pullDownToRefresh
+              pullDownToRefreshContent={
+                <h3 style={{ textAlign: 'center', color: '#ff6600' }}>
+                  &#8595; Pull down to refresh
+                </h3>
+              }
+              releaseToRefreshContent={
+                <h3 style={{ textAlign: 'center' }}>
+                  &#8593; Release to refresh
+                </h3>
+              }
             >
               <List stories={stories} />
             </InfiniteScroll>
@@ -87,6 +106,6 @@ AppContainer.propTypes = {
   isFetching: PropTypes.bool.isRequired,
   fetchStories: PropTypes.func,
   fetchStoriesFirstPage: PropTypes.func.isRequired,
-  hasMoreStores: PropTypes.bool.isRequired,
+  hasMoreStories: PropTypes.bool,
 };
 export default AppContainer;
