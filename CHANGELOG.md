@@ -6,13 +6,22 @@
 
 ### Added
 
+- ✨ More features [[7e5d267](https://github.com/EvilSpark/HNClone/commit/7e5d267d4ecfedec940a98b8f17fb26976deaa44)]
 - ✨ Done till static components [[51d3133](https://github.com/EvilSpark/HNClone/commit/51d313336a2d3f1898e4ef9ef7b55e3075a79f11)]
 - ➕ Redux, axios and logger [[e7c9375](https://github.com/EvilSpark/HNClone/commit/e7c9375e99e49c0443f401d3cc3fcec46501b326)]
+
+### Removed
+
+- 🔥 Removed test files [[c9ae53e](https://github.com/EvilSpark/HNClone/commit/c9ae53ef1fef6b0643956177ec9a2c91107b495a)]
 
 ### Fixed
 
 - 🐛 Changed from travis to nodeCi [[7a46dbf](https://github.com/EvilSpark/HNClone/commit/7a46dbf4fcd4086fdfc45176523e1ca3a76e6464)]
 - 🏁 In the middle of fixing states [[0b6749b](https://github.com/EvilSpark/HNClone/commit/0b6749b26b33ae78a4af4fdc2bf271deaecf3695)]
+
+### Security
+
+- 🔒 Removed useless files [[746b013](https://github.com/EvilSpark/HNClone/commit/746b0133415d3c1a76545e9202e28fd033ecd9b7)]
 
 ### Miscellaneous
 

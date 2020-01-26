@@ -111,11 +111,11 @@ module.exports = require('./webpack.base.babel')({
     }),
 
     new WebpackPwaManifest({
-      name: 'Infinity-react-boilerplate',
-      short_name: 'React BP',
-      description: 'My Infinity-react-boilerplate-based project!',
+      name: 'HackerNews Clone',
+      short_name: 'HN Clone',
+      description: 'HackerNews clone using redux',
       background_color: '#fafafa',
-      theme_color: '#10C697',
+      theme_color: '#ff6600',
       inject: true,
       ios: true,
       icons: [

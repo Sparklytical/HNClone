@@ -25,14 +25,8 @@ class App extends Component {
     return (
       <ThemeProvider theme={colorsDark}>
         <div>
-          <Helmet
-            titleTemplate="%s - React.js Boilerplate"
-            defaultTitle="React.js Boilerplate"
-          >
-            <meta
-              name="description"
-              content="A React.js Boilerplate application"
-            />
+          <Helmet titleTemplate="%s - HN Clone" defaultTitle="HN Clone">
+            <meta name="description" content="A HN Clone application" />
           </Helmet>
           <Switch>
             <Route exact path="/" component={HomePage} />
