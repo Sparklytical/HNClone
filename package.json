@@ -92,7 +92,7 @@
     "redux-thunk": "2.3.0",
     "reselect": "4.0.0",
     "sanitize.css": "11.0.0",
-    "styled-components": "5.0.0",
+    "styled-components": "5.0.1",
     "timeago.js": "4.0.2",
     "url": "0.11.0"
   },
