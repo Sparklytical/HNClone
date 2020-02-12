@@ -11,7 +11,7 @@ dependencies:
   fontfaceobserver: 2.1.0
   history: 4.10.1
   hoist-non-react-statics: 3.3.2
-  immer: 5.3.2
+  immer: 5.3.6
   intl: 1.2.5
   invariant: 2.2.4
   ip: 1.1.5
@@ -27,7 +27,7 @@ dependencies:
   react-hot-loader: 4.12.19_react-dom@16.12.0+react@16.12.0
   react-infinite-scroll-component: 5.0.4_react@16.12.0
   react-is: 16.12.0
-  react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+  react-redux: 7.1.3_react@16.12.0+redux@4.0.5
   react-router-dom: 5.1.2_react@16.12.0
   react-timeago: 4.4.0_react@16.12.0
   redux: 4.0.5
@@ -3458,7 +3458,7 @@ packages:
       immutable: 3.8.2
       prop-types: 15.7.2
       react: 16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.5
       seamless-immutable: 7.1.4
     dev: false
@@ -6455,10 +6455,10 @@ packages:
     dev: false
     resolution:
       integrity: sha512-Q/tm+yKqnKy4RIBmmtISBlhXuSDrB69e9EKTYiIenIKQkXBQir43w+kN/eGiax3wt1J0O1b2fYcNqLSbEcXA7w==
-  /immer/5.3.2:
+  /immer/5.3.6:
     dev: false
     resolution:
-      integrity: sha512-wPWsSV0fv8iT7QQVs3rxBDWTbi5pHrVgnQv/McMfaRGJTLfQ3jFMEr08UibqS8hM17KCQXcjjYYzQzYe5e7BIA==
+      integrity: sha512-pqWQ6ozVfNOUDjrLfm4Pt7q4Q12cGw2HUZgry4Q5+Myxu9nmHRkWBpI0J4+MK0AxbdFtdMTwEGVl7Vd+vEiK+A==
   /immutable/3.8.2:
     dev: false
     engines:
@@ -9848,7 +9848,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-redux/7.1.3_cbb074364ace735d13d38692c50e064b:
+  /react-redux/7.1.3_react@16.12.0+redux@4.0.5:
     dependencies:
       '@babel/runtime': 7.7.6
       hoist-non-react-statics: 3.3.1
@@ -9856,14 +9856,11 @@ packages:
       loose-envify: 1.4.0
       prop-types: 15.7.2
       react: 16.12.0
-      react-dom: 16.12.0_react@16.12.0
       react-is: 16.12.0
       redux: 4.0.5
     dev: false
     peerDependencies:
       react: ^16.8.3
-      react-dom: '*'
-      react-native: '*'
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
     peerDependenciesMeta:
       react-dom:
@@ -10112,7 +10109,7 @@ packages:
       lodash: 4.17.15
       react: 16.12.0
       react-dom: 16.12.0_react@16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.4
     dev: false
     peerDependencies:
@@ -12918,7 +12915,7 @@ specifiers:
   html-webpack-plugin: 3.2.0
   husky: 4.2.1
   image-webpack-loader: 6.0.0
-  immer: 5.3.2
+  immer: 5.3.6
   imports-loader: 0.8.0
   intl: 1.2.5
   invariant: 2.2.4
