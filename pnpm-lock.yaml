@@ -27,7 +27,7 @@ dependencies:
   react-hot-loader: 4.12.19_react-dom@16.12.0+react@16.12.0
   react-infinite-scroll-component: 5.0.4_react@16.12.0
   react-is: 16.12.0
-  react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+  react-redux: 7.1.3_react@16.12.0+redux@4.0.5
   react-router-dom: 5.1.2_react@16.12.0
   react-timeago: 4.4.0_react@16.12.0
   redux: 4.0.5
@@ -82,7 +82,7 @@ devDependencies:
   husky: 4.2.1
   image-webpack-loader: 6.0.0
   imports-loader: 0.8.0
-  lint-staged: 10.0.2
+  lint-staged: 10.0.8
   ngrok: 3.2.7
   node-plop: 0.23.0
   node-sass: 4.13.1
@@ -3364,6 +3364,12 @@ packages:
       node: '>= 6'
     resolution:
       integrity: sha512-NIQrwvv9V39FHgGFm36+U9SMQzbiHvU79k+iADraJTpmrFFfx7Ds0IvDoAdZsDrknlkRk14OYoWXb57uTh7/sw==
+  /commander/4.1.1:
+    dev: true
+    engines:
+      node: '>= 6'
+    resolution:
+      integrity: sha512-NOKm8xhkzAjzFx8B2v5OAHT+u5pRQc2UCa2Vq9jYL/31o2wi9mxBA7LIFs3sV5VSC49z6pEhfbMULvShKj26WA==
   /commondir/1.0.1:
     dev: true
     resolution:
@@ -3458,7 +3464,7 @@ packages:
       immutable: 3.8.2
       prop-types: 15.7.2
       react: 16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.5
       seamless-immutable: 7.1.4
     dev: false
@@ -7375,10 +7381,10 @@ packages:
     dev: true
     resolution:
       integrity: sha1-HADHQ7QzzQpOgHWPe2SldEDZ/wA=
-  /lint-staged/10.0.2:
+  /lint-staged/10.0.8:
     dependencies:
       chalk: 3.0.0
-      commander: 4.1.0
+      commander: 4.1.1
       cosmiconfig: 6.0.0
       debug: 4.1.1
       dedent: 0.7.0
@@ -7393,7 +7399,7 @@ packages:
     dev: true
     hasBin: true
     resolution:
-      integrity: sha512-ZldhtIfT7bynVa7nmU/1jbK05r9hYQXbIQqZSotqdBCAcGJDEUqaUB7kG3ZCdoe9Qkj6HUM3x2yjCGJRxPUQLA==
+      integrity: sha512-Oa9eS4DJqvQMVdywXfEor6F4vP+21fPHF8LUXgBbVWUSWBddjqsvO6Bv1LwMChmgQZZqwUvgJSHlu8HFHAPZmA==
   /listr-silent-renderer/1.1.1:
     dev: true
     engines:
@@ -9848,7 +9854,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-redux/7.1.3_cbb074364ace735d13d38692c50e064b:
+  /react-redux/7.1.3_react@16.12.0+redux@4.0.5:
     dependencies:
       '@babel/runtime': 7.7.6
       hoist-non-react-statics: 3.3.1
@@ -9856,14 +9862,11 @@ packages:
       loose-envify: 1.4.0
       prop-types: 15.7.2
       react: 16.12.0
-      react-dom: 16.12.0_react@16.12.0
       react-is: 16.12.0
       redux: 4.0.5
     dev: false
     peerDependencies:
       react: ^16.8.3
-      react-dom: '*'
-      react-native: '*'
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
     peerDependenciesMeta:
       react-dom:
@@ -10112,7 +10115,7 @@ packages:
       lodash: 4.17.15
       react: 16.12.0
       react-dom: 16.12.0_react@16.12.0
-      react-redux: 7.1.3_cbb074364ace735d13d38692c50e064b
+      react-redux: 7.1.3_react@16.12.0+redux@4.0.5
       redux: 4.0.4
     dev: false
     peerDependencies:
@@ -10532,7 +10535,7 @@ packages:
       integrity: sha512-wuYsAYYFdWTAnAaPoKGNhfpWwKZbJW+HgAJ+mImp+Epl7BG8oNWBCTyRM8gba9k4lk8BgWdoYm21Mo/RYhhbgA==
   /rxjs/6.5.4:
     dependencies:
-      tslib: 1.10.0
+      tslib: 1.11.0
     dev: true
     engines:
       npm: '>=2.0.0'
@@ -11928,6 +11931,10 @@ packages:
     dev: true
     resolution:
       integrity: sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==
+  /tslib/1.11.0:
+    dev: true
+    resolution:
+      integrity: sha512-BmndXUtiTn/VDDrJzQE7Mm22Ix3PxgLltW9bSNLoeCY31gnG2OPx0QqJnuc9oMIKioYrz487i6K9o4Pdn0j+Kg==
   /tty-browserify/0.0.0:
     dev: true
     resolution:
@@ -12923,7 +12930,7 @@ specifiers:
   intl: 1.2.5
   invariant: 2.2.4
   ip: 1.1.5
-  lint-staged: 10.0.2
+  lint-staged: 10.0.8
   lodash: 4.17.15
   minimist: 1.2.0
   ngrok: 3.2.7
