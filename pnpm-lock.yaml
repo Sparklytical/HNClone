@@ -16,7 +16,7 @@ dependencies:
   invariant: 2.2.4
   ip: 1.1.5
   lodash: 4.17.15
-  minimist: 1.2.0
+  minimist: 1.2.5
   offline-plugin: 5.0.7
   pretty-error: 2.1.1
   prop-types: 15.7.2
@@ -27,7 +27,7 @@ dependencies:
   react-hot-loader: 4.12.19_react-dom@16.13.0+react@16.13.0
   react-infinite-scroll-component: 5.0.4_react@16.13.0
   react-is: 16.13.0
-  react-redux: 7.2.0_89edbdcf35ebf07960559427ad340367
+  react-redux: 7.2.0_react@16.13.0+redux@4.0.5
   react-router-dom: 5.1.2_react@16.13.0
   react-timeago: 4.4.0_react@16.13.0
   redux: 4.0.5
@@ -3313,7 +3313,7 @@ packages:
       history: 4.10.1
       prop-types: 15.7.2
       react: 16.13.0
-      react-redux: 7.2.0_89edbdcf35ebf07960559427ad340367
+      react-redux: 7.2.0_react@16.13.0+redux@4.0.5
       redux: 4.0.5
     dev: false
     peerDependencies:
@@ -7851,6 +7851,10 @@ packages:
   /minimist/1.2.0:
     resolution:
       integrity: sha1-o1AIsg9BOD7sH7kU9M1d95omQoQ=
+  /minimist/1.2.5:
+    dev: false
+    resolution:
+      integrity: sha512-FM9nNUYrRBAELZQT3xeZQ7fmMOBg6nWNmJKTcgsJeaLstP/UODVpGsr5OhXhhXg6f+qtJ8uiZ+PUxkDWcgIXLw==
   /minipass-collect/1.0.2:
     dependencies:
       minipass: 3.1.1
@@ -9684,21 +9688,18 @@ packages:
     dev: false
     resolution:
       integrity: sha512-fBASbA6LnOU9dOU2eW7aQ8xmYBSXUIWr+UmF9b1efZBazGNO+rcXT/icdKnYm2pTwcRylVUYwW7H1PHfLekVzA==
-  /react-redux/7.2.0_89edbdcf35ebf07960559427ad340367:
+  /react-redux/7.2.0_react@16.13.0+redux@4.0.5:
     dependencies:
       '@babel/runtime': 7.7.7
       hoist-non-react-statics: 3.3.2
       loose-envify: 1.4.0
       prop-types: 15.7.2
       react: 16.13.0
-      react-dom: 16.13.0_react@16.13.0
       react-is: 16.13.0
       redux: 4.0.5
     dev: false
     peerDependencies:
       react: ^16.8.3
-      react-dom: '*'
-      react-native: '*'
       redux: ^2.0.0 || ^3.0.0 || ^4.0.0-0
     peerDependenciesMeta:
       react-dom:
@@ -9947,7 +9948,7 @@ packages:
       lodash: 4.17.15
       react: 16.13.0
       react-dom: 16.13.0_react@16.13.0
-      react-redux: 7.2.0_89edbdcf35ebf07960559427ad340367
+      react-redux: 7.2.0_react@16.13.0+redux@4.0.5
       redux: 4.0.5
     dev: false
     peerDependencies:
@@ -12780,7 +12781,7 @@ specifiers:
   ip: 1.1.5
   lint-staged: 10.0.8
   lodash: 4.17.15
-  minimist: 1.2.0
+  minimist: 1.2.5
   ngrok: 3.2.7
   node-plop: 0.24.0
   node-sass: 4.13.1
